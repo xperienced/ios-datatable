@@ -1,0 +1,244 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A90CAC514A28AD600F91E1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A90CAC414A28AD600F91E1C /* Foundation.framework */; };
+		1A90CAD314A28E3E00F91E1C /* XPSettingItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A90CAD114A28E3E00F91E1C /* XPSettingItem.h */; };
+		1A90CAD414A28E3E00F91E1C /* XPSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A90CAD214A28E3E00F91E1C /* XPSettingItem.m */; };
+		1A90CAE214A2913A00F91E1C /* XPSettingGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A90CAE014A2913A00F91E1C /* XPSettingGroup.h */; };
+		1A90CAE314A2913A00F91E1C /* XPSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A90CAE114A2913A00F91E1C /* XPSettingGroup.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A90CAC114A28AD600F91E1C /* libios-datatable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-datatable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A90CAC414A28AD600F91E1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A90CAC814A28AD600F91E1C /* ios-datatable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-datatable-Prefix.pch"; sourceTree = "<group>"; };
+		1A90CAD114A28E3E00F91E1C /* XPSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSettingItem.h; sourceTree = "<group>"; };
+		1A90CAD214A28E3E00F91E1C /* XPSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSettingItem.m; sourceTree = "<group>"; };
+		1A90CAE014A2913A00F91E1C /* XPSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSettingGroup.h; sourceTree = "<group>"; };
+		1A90CAE114A2913A00F91E1C /* XPSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSettingGroup.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A90CABE14A28AD600F91E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A90CAC514A28AD600F91E1C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A90CAB614A28AD600F91E1C = {
+			isa = PBXGroup;
+			children = (
+				1A90CAC614A28AD600F91E1C /* ios-datatable */,
+				1A90CAC314A28AD600F91E1C /* Frameworks */,
+				1A90CAC214A28AD600F91E1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A90CAC214A28AD600F91E1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A90CAC114A28AD600F91E1C /* libios-datatable.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A90CAC314A28AD600F91E1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A90CAC414A28AD600F91E1C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A90CAC614A28AD600F91E1C /* ios-datatable */ = {
+			isa = PBXGroup;
+			children = (
+				1A90CAC714A28AD600F91E1C /* Supporting Files */,
+				1A90CAD114A28E3E00F91E1C /* XPSettingItem.h */,
+				1A90CAD214A28E3E00F91E1C /* XPSettingItem.m */,
+				1A90CAE014A2913A00F91E1C /* XPSettingGroup.h */,
+				1A90CAE114A2913A00F91E1C /* XPSettingGroup.m */,
+			);
+			path = "ios-datatable";
+			sourceTree = "<group>";
+		};
+		1A90CAC714A28AD600F91E1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A90CAC814A28AD600F91E1C /* ios-datatable-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A90CABF14A28AD600F91E1C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A90CAD314A28E3E00F91E1C /* XPSettingItem.h in Headers */,
+				1A90CAE214A2913A00F91E1C /* XPSettingGroup.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1A90CAC014A28AD600F91E1C /* ios-datatable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A90CACE14A28AD600F91E1C /* Build configuration list for PBXNativeTarget "ios-datatable" */;
+			buildPhases = (
+				1A90CABD14A28AD600F91E1C /* Sources */,
+				1A90CABE14A28AD600F91E1C /* Frameworks */,
+				1A90CABF14A28AD600F91E1C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-datatable";
+			productName = "ios-datatable";
+			productReference = 1A90CAC114A28AD600F91E1C /* libios-datatable.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A90CAB814A28AD600F91E1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = XPerienced;
+			};
+			buildConfigurationList = 1A90CABB14A28AD600F91E1C /* Build configuration list for PBXProject "ios-datatable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A90CAB614A28AD600F91E1C;
+			productRefGroup = 1A90CAC214A28AD600F91E1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A90CAC014A28AD600F91E1C /* ios-datatable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A90CABD14A28AD600F91E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A90CAD414A28E3E00F91E1C /* XPSettingItem.m in Sources */,
+				1A90CAE314A2913A00F91E1C /* XPSettingGroup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A90CACC14A28AD600F91E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A90CACD14A28AD600F91E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A90CACF14A28AD600F91E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ios_datatable.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios-datatable/ios-datatable-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1A90CAD014A28AD600F91E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ios_datatable.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios-datatable/ios-datatable-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A90CABB14A28AD600F91E1C /* Build configuration list for PBXProject "ios-datatable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A90CACC14A28AD600F91E1C /* Debug */,
+				1A90CACD14A28AD600F91E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A90CACE14A28AD600F91E1C /* Build configuration list for PBXNativeTarget "ios-datatable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A90CACF14A28AD600F91E1C /* Debug */,
+				1A90CAD014A28AD600F91E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A90CAB814A28AD600F91E1C /* Project object */;
+}
