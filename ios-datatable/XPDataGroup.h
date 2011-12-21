@@ -6,10 +6,10 @@
 //  Copyright (c) 2011 XPerienced. All rights reserved.
 //
 
-@interface XPSettingGroup : NSObject
+@interface XPDataGroup : NSObject
 
 @property (strong, nonatomic) NSString *text;
-@property (strong, nonatomic) NSArray *items;
+@property (strong, nonatomic) NSArray *cells;
 
 - (id)initWithText:(NSString *)text;
 

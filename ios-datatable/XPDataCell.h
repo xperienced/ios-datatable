@@ -9,16 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@class XPSettingGroup;
+@class XPDataGroup;
 
-@interface XPSettingItem : NSObject
+@interface XPDataCell : NSObject
 
 @property (strong, nonatomic) NSString *text;
 @property (nonatomic, readonly) BOOL allowNavigation;
 @property (strong, nonatomic) NSObject *dataSource;
 @property (strong, nonatomic) NSString *propertyKey;
 
-@property (unsafe_unretained, nonatomic) XPSettingGroup *settingGroup;
+@property (unsafe_unretained, nonatomic) XPDataGroup *cellGroup;
 
 
 - (id)initWithText:(NSString *)text;

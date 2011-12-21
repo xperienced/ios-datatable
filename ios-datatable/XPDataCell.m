@@ -6,14 +6,14 @@
 //  Copyright (c) 2011 XPerienced. All rights reserved.
 //
 
-#import "XPSettingItem.h"
+#import "XPDataCell.h"
 
-@implementation XPSettingItem
+@implementation XPDataCell
 
 @synthesize text = _text;
 @synthesize dataSource = _dataSource;
 @synthesize propertyKey = _propertyKey;
-@synthesize settingGroup = _settingGroup;
+@synthesize cellGroup = _settingGroup;
 
 - (id)initWithText:(NSString *)text {
     if ((self = [super init])) {

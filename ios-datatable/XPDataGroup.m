@@ -6,13 +6,13 @@
 //  Copyright (c) 2011 XPerienced. All rights reserved.
 //
 
-#import "XPSettingItem.h"
-#import "XPSettingGroup.h"
+#import "XPDataCell.h"
+#import "XPDataGroup.h"
 
-@implementation XPSettingGroup
+@implementation XPDataGroup
 
 @synthesize text = _text;
-@synthesize items = _items;
+@synthesize cells = _cells;
 
 - (id)initWithText:(NSString *)text {
     if ((self = [super init])) {
@@ -22,11 +22,11 @@
     return self;
 }
 
-- (void)setItems:(NSArray *)items {
-    _items = items;
+- (void)setCells:(NSArray *)cells {
+    _cells = cells;
     
-    for (XPSettingItem *item in items) {
-        item.settingGroup = self;
+    for (XPDataCell *cell in cells) {
+        cell.cellGroup = self;
     }
 }
 

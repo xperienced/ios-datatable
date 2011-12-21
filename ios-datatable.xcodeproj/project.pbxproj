@@ -8,20 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		1A90CAC514A28AD600F91E1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A90CAC414A28AD600F91E1C /* Foundation.framework */; };
-		1A90CAD314A28E3E00F91E1C /* XPSettingItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A90CAD114A28E3E00F91E1C /* XPSettingItem.h */; };
-		1A90CAD414A28E3E00F91E1C /* XPSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A90CAD214A28E3E00F91E1C /* XPSettingItem.m */; };
-		1A90CAE214A2913A00F91E1C /* XPSettingGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A90CAE014A2913A00F91E1C /* XPSettingGroup.h */; };
-		1A90CAE314A2913A00F91E1C /* XPSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A90CAE114A2913A00F91E1C /* XPSettingGroup.m */; };
+		1A90CAD314A28E3E00F91E1C /* XPDataCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A90CAD114A28E3E00F91E1C /* XPDataCell.h */; };
+		1A90CAD414A28E3E00F91E1C /* XPDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A90CAD214A28E3E00F91E1C /* XPDataCell.m */; };
+		1A90CAE714A2959A00F91E1C /* XPDataGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A90CAE514A2954000F91E1C /* XPDataGroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A90CAC114A28AD600F91E1C /* libios-datatable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-datatable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A90CAC414A28AD600F91E1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A90CAC814A28AD600F91E1C /* ios-datatable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-datatable-Prefix.pch"; sourceTree = "<group>"; };
-		1A90CAD114A28E3E00F91E1C /* XPSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSettingItem.h; sourceTree = "<group>"; };
-		1A90CAD214A28E3E00F91E1C /* XPSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSettingItem.m; sourceTree = "<group>"; };
-		1A90CAE014A2913A00F91E1C /* XPSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSettingGroup.h; sourceTree = "<group>"; };
-		1A90CAE114A2913A00F91E1C /* XPSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSettingGroup.m; sourceTree = "<group>"; };
+		1A90CAD114A28E3E00F91E1C /* XPDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDataCell.h; sourceTree = "<group>"; };
+		1A90CAD214A28E3E00F91E1C /* XPDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDataCell.m; sourceTree = "<group>"; };
+		1A90CAE414A2954000F91E1C /* XPDataGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPDataGroup.h; sourceTree = "<group>"; };
+		1A90CAE514A2954000F91E1C /* XPDataGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPDataGroup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				1A90CAC714A28AD600F91E1C /* Supporting Files */,
-				1A90CAD114A28E3E00F91E1C /* XPSettingItem.h */,
-				1A90CAD214A28E3E00F91E1C /* XPSettingItem.m */,
-				1A90CAE014A2913A00F91E1C /* XPSettingGroup.h */,
-				1A90CAE114A2913A00F91E1C /* XPSettingGroup.m */,
+				1A90CAD114A28E3E00F91E1C /* XPDataCell.h */,
+				1A90CAD214A28E3E00F91E1C /* XPDataCell.m */,
+				1A90CAE414A2954000F91E1C /* XPDataGroup.h */,
+				1A90CAE514A2954000F91E1C /* XPDataGroup.m */,
 			);
 			path = "ios-datatable";
 			sourceTree = "<group>";
@@ -88,8 +87,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A90CAD314A28E3E00F91E1C /* XPSettingItem.h in Headers */,
-				1A90CAE214A2913A00F91E1C /* XPSettingGroup.h in Headers */,
+				1A90CAD314A28E3E00F91E1C /* XPDataCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A90CAD414A28E3E00F91E1C /* XPSettingItem.m in Sources */,
-				1A90CAE314A2913A00F91E1C /* XPSettingGroup.m in Sources */,
+				1A90CAE714A2959A00F91E1C /* XPDataGroup.m in Sources */,
+				1A90CAD414A28E3E00F91E1C /* XPDataCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
