@@ -13,6 +13,8 @@
 		1A90CAE714A2959A00F91E1C /* XPDataGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A90CAE514A2954000F91E1C /* XPDataGroup.m */; };
 		1A90CAEA14A296CD00F91E1C /* XPDataTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A90CAE814A296CD00F91E1C /* XPDataTableViewController.h */; };
 		1A90CAEB14A296CD00F91E1C /* XPDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A90CAE914A296CD00F91E1C /* XPDataTableViewController.m */; };
+		1ABBE57A14A3E3FA00B856A8 /* XPSwitchDataCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ABBE57814A3E3FA00B856A8 /* XPSwitchDataCell.h */; };
+		1ABBE57B14A3E3FA00B856A8 /* XPSwitchDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBE57914A3E3FA00B856A8 /* XPSwitchDataCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		1A90CAE514A2954000F91E1C /* XPDataGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPDataGroup.m; sourceTree = "<group>"; };
 		1A90CAE814A296CD00F91E1C /* XPDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDataTableViewController.h; sourceTree = "<group>"; };
 		1A90CAE914A296CD00F91E1C /* XPDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDataTableViewController.m; sourceTree = "<group>"; };
+		1ABBE57814A3E3FA00B856A8 /* XPSwitchDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSwitchDataCell.h; sourceTree = "<group>"; };
+		1ABBE57914A3E3FA00B856A8 /* XPSwitchDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSwitchDataCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				1A90CAE514A2954000F91E1C /* XPDataGroup.m */,
 				1A90CAE814A296CD00F91E1C /* XPDataTableViewController.h */,
 				1A90CAE914A296CD00F91E1C /* XPDataTableViewController.m */,
+				1ABBE57814A3E3FA00B856A8 /* XPSwitchDataCell.h */,
+				1ABBE57914A3E3FA00B856A8 /* XPSwitchDataCell.m */,
 			);
 			path = "ios-datatable";
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 			files = (
 				1A90CAD314A28E3E00F91E1C /* XPDataCell.h in Headers */,
 				1A90CAEA14A296CD00F91E1C /* XPDataTableViewController.h in Headers */,
+				1ABBE57A14A3E3FA00B856A8 /* XPSwitchDataCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +159,7 @@
 				1A90CAE714A2959A00F91E1C /* XPDataGroup.m in Sources */,
 				1A90CAD414A28E3E00F91E1C /* XPDataCell.m in Sources */,
 				1A90CAEB14A296CD00F91E1C /* XPDataTableViewController.m in Sources */,
+				1ABBE57B14A3E3FA00B856A8 /* XPSwitchDataCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +251,7 @@
 				1A90CAD014A28AD600F91E1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
