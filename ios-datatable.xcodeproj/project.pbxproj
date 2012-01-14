@@ -11,6 +11,8 @@
 		1A13007014C1D33D00A77F85 /* XPSliderDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A13006E14C1D33D00A77F85 /* XPSliderDataCell.m */; };
 		1A13007414C1DB3F00A77F85 /* XPCheckmarkDataCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A13007214C1DB3F00A77F85 /* XPCheckmarkDataCell.h */; };
 		1A13007514C1DB3F00A77F85 /* XPCheckmarkDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A13007314C1DB3F00A77F85 /* XPCheckmarkDataCell.m */; };
+		1A13007814C1DFB700A77F85 /* XPPickerDataCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A13007614C1DFB700A77F85 /* XPPickerDataCell.h */; };
+		1A13007914C1DFB700A77F85 /* XPPickerDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A13007714C1DFB700A77F85 /* XPPickerDataCell.m */; };
 		1A90CAC514A28AD600F91E1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A90CAC414A28AD600F91E1C /* Foundation.framework */; };
 		1A90CAD314A28E3E00F91E1C /* XPDataCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A90CAD114A28E3E00F91E1C /* XPDataCell.h */; };
 		1A90CAD414A28E3E00F91E1C /* XPDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A90CAD214A28E3E00F91E1C /* XPDataCell.m */; };
@@ -26,6 +28,8 @@
 		1A13006E14C1D33D00A77F85 /* XPSliderDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSliderDataCell.m; sourceTree = "<group>"; };
 		1A13007214C1DB3F00A77F85 /* XPCheckmarkDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCheckmarkDataCell.h; sourceTree = "<group>"; };
 		1A13007314C1DB3F00A77F85 /* XPCheckmarkDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPCheckmarkDataCell.m; sourceTree = "<group>"; };
+		1A13007614C1DFB700A77F85 /* XPPickerDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPickerDataCell.h; sourceTree = "<group>"; };
+		1A13007714C1DFB700A77F85 /* XPPickerDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPickerDataCell.m; sourceTree = "<group>"; };
 		1A90CAC114A28AD600F91E1C /* libios-datatable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-datatable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A90CAC414A28AD600F91E1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A90CAC814A28AD600F91E1C /* ios-datatable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-datatable-Prefix.pch"; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				1A13006E14C1D33D00A77F85 /* XPSliderDataCell.m */,
 				1A13007214C1DB3F00A77F85 /* XPCheckmarkDataCell.h */,
 				1A13007314C1DB3F00A77F85 /* XPCheckmarkDataCell.m */,
+				1A13007614C1DFB700A77F85 /* XPPickerDataCell.h */,
+				1A13007714C1DFB700A77F85 /* XPPickerDataCell.m */,
 			);
 			path = "ios-datatable";
 			sourceTree = "<group>";
@@ -116,6 +122,7 @@
 				1ABBE57A14A3E3FA00B856A8 /* XPSwitchDataCell.h in Headers */,
 				1A13006F14C1D33D00A77F85 /* XPSliderDataCell.h in Headers */,
 				1A13007414C1DB3F00A77F85 /* XPCheckmarkDataCell.h in Headers */,
+				1A13007814C1DFB700A77F85 /* XPPickerDataCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +183,7 @@
 				1ABBE57B14A3E3FA00B856A8 /* XPSwitchDataCell.m in Sources */,
 				1A13007014C1D33D00A77F85 /* XPSliderDataCell.m in Sources */,
 				1A13007514C1DB3F00A77F85 /* XPCheckmarkDataCell.m in Sources */,
+				1A13007914C1DFB700A77F85 /* XPPickerDataCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
