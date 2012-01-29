@@ -21,7 +21,8 @@
 @synthesize value = _value;
 @synthesize format = _format;
 @synthesize selectedRow = _selectedRow;
-@synthesize textField = _textField;
+@synthesize actionSheet = _actionSheet;
+@synthesize cell = _cell;
 
 - (id)initWithText:(NSString *)text items:(NSArray *)items value:(NSString *)value {
     if ((self = [self initWithText:text 
@@ -64,15 +65,22 @@
 - (void)configureCell:(UITableViewCell *)cell {
     [super configureCell:cell];
     
-    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(0,0,80,22)];
-    textField.font = [UIFont systemFontOfSize:17];
-    textField.textColor = cell.detailTextLabel.textColor;
+    self.cell = cell;
     
-    // create picker view
+    // create action sheet to display picker
     
-    UIPickerView *picker = [[UIPickerView alloc] init];
-    [picker sizeToFit];
-    picker.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
+    self.actionSheet = [[UIActionSheet alloc] initWithTitle:nil 
+                                                   delegate:nil
+                                          cancelButtonTitle:nil
+                                     destructiveButtonTitle:nil
+                                          otherButtonTitles:nil];
+    
+    [self.actionSheet setActionSheetStyle:UIActionSheetStyleBlackTranslucent];
+    
+     // create picker view
+    
+    UIPickerView *picker = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 40, 0, 0)];
+    //picker.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
     
     picker.delegate = self;
     picker.dataSource = self;
@@ -80,32 +88,34 @@
     self.selectedRow = [self.items indexOfObject:self.value];
     [picker selectRow:self.selectedRow inComponent:0 animated:YES];
     
+    [self.actionSheet addSubview:picker];
+    
     // create done button
-    UIToolbar* doneButtonToolbar = [[UIToolbar alloc] init];
-    doneButtonToolbar.barStyle = UIBarStyleBlack;
-    doneButtonToolbar.translucent = YES;
-    doneButtonToolbar.tintColor = nil;
-    [doneButtonToolbar sizeToFit];
     
-    // TODO: localize Done button
-    UIBarButtonItem* doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done"
-                                                                   style:UIBarButtonItemStyleBordered 
-                                                                  target:self
-                                                                  action:@selector(pickerDone:)];
+    UISegmentedControl *closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:@"Done"]];
+    closeButton.momentary = YES; 
+    closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
+    closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
+    closeButton.tintColor = [UIColor blackColor];
+    [closeButton addTarget:self action:@selector(pickerDone:) forControlEvents:UIControlEventValueChanged];
+    [self.actionSheet addSubview:closeButton];
     
-    [doneButtonToolbar setItems:[NSArray arrayWithObjects:doneButton, nil]];
     
-    // attach toolbar to textfield accessory view
-    textField.inputAccessoryView = doneButtonToolbar;
+    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(0,0,80,22)];
+    textField.font = [UIFont systemFontOfSize:17];
+    textField.textColor = cell.detailTextLabel.textColor;
     
-    textField.placeholder = self.text;
-    textField.text = [self formatPickerItem:self.value];
-    textField.textAlignment = UITextAlignmentRight;
-    
-    textField.inputView = picker;
-    
-    cell.accessoryView = textField;
-    self.textField = textField;
+
+    cell.detailTextLabel.text = self.text;
+}
+
+- (void)tableViewRowSelected:(UITableView *)tableView navigationController:(UINavigationController *)navigationController {
+    [self.actionSheet showInView:[[UIApplication sharedApplication] keyWindow]];
+    [self.actionSheet setBounds:CGRectMake(0, 0, 320, 485)];
+}
+
+- (BOOL)allowNavigation {
+    return YES;
 }
 
 #pragma UIPicker delegate
@@ -136,13 +146,13 @@
 - (void)pickerDone:(id)sender {
     NSObject *item = [self.items objectAtIndex:self.selectedRow];
     
+    [self.actionSheet dismissWithClickedButtonIndex:0 animated:YES];
+    
     self.value = item;
     [self.dataSource setValue:item forKey:self.propertyKey];
     
-    // update text field
-    self.textField.text = [self formatPickerItem:item];
-    
-    [self.textField resignFirstResponder];
+    // TODO: update detail label
+    self.cell.detailTextLabel.text = [self formatPickerItem:self.value];
 }
 
 

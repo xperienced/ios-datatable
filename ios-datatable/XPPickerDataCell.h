@@ -16,8 +16,9 @@ typedef NSString * (^FormatPickerDataCellBlock)(NSObject *item);
 @property (strong, nonatomic) NSObject *value;
 @property (strong, nonatomic) NSArray *items;
 @property (strong, nonatomic) FormatPickerDataCellBlock format;
-@property (unsafe_unretained, nonatomic) UITextField *textField;
+@property (strong, nonatomic) UIActionSheet *actionSheet;
 @property (nonatomic) int selectedRow;
+@property (unsafe_unretained, nonatomic) UITableViewCell *cell;
 
 - (id)initWithText:(NSString *)text items:(NSArray *)items value:(NSObject *)value;
 - (id)initWithText:(NSString *)text items:(NSArray *)items value:(NSObject *)value format:(FormatPickerDataCellBlock)format;
