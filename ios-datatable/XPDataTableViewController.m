@@ -42,7 +42,7 @@
     // Configure the cell...
     XPDataGroup *group = [self.dataGroups objectAtIndex:indexPath.section];
     XPDataCell *dataCell = [group.cells objectAtIndex:indexPath.row];
-    [dataCell configureCell:cell];
+    [dataCell configureCell:cell forTableView:tableView];
     
     return cell;
 }

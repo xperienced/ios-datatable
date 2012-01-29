@@ -35,8 +35,8 @@
     [self.dataSource setValue:[NSNumber numberWithBool:self.on] forKey:self.propertyKey];
 }
 
-- (void)configureCell:(UITableViewCell *)cell {
-    [super configureCell:cell];
+- (void)configureCell:(UITableViewCell *)cell forTableView:(UITableView *)tableView {
+    [super configureCell:cell forTableView:tableView];
     
     // create and configure UISwitch
     UISwitch *onOffSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];

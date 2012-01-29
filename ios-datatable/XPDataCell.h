@@ -19,11 +19,11 @@
 @property (strong, nonatomic) NSString *propertyKey;
 
 @property (unsafe_unretained, nonatomic) XPDataGroup *cellGroup;
-
+@property (unsafe_unretained, nonatomic) UITableView *tableView;
 
 - (id)initWithText:(NSString *)text;
 - (id)initWithText:(NSString *)text dataSource:(NSObject *)dataSource propertyKey:(NSString *)propertyKey;
-- (void)configureCell:(UITableViewCell *)cell;
+- (void)configureCell:(UITableViewCell *)cell forTableView:(UITableView *)tableView;
 - (void)tableViewRowSelected:(UITableView *)tableView navigationController:(UINavigationController *)navigationController;
 
 @end

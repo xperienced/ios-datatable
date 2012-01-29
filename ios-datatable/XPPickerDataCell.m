@@ -62,8 +62,8 @@
     return self;
 }
 
-- (void)configureCell:(UITableViewCell *)cell {
-    [super configureCell:cell];
+- (void)configureCell:(UITableViewCell *)cell forTableView:(UITableView *)tableView {
+    [super configureCell:cell forTableView:tableView];
     
     self.cell = cell;
     

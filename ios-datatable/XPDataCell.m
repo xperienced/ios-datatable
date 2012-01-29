@@ -14,6 +14,7 @@
 @synthesize dataSource = _dataSource;
 @synthesize propertyKey = _propertyKey;
 @synthesize cellGroup = _settingGroup;
+@synthesize tableView = _tableView;
 
 - (id)initWithText:(NSString *)text {
     if ((self = [super init])) {
@@ -32,7 +33,9 @@
     return self;
 }
 
-- (void)configureCell:(UITableViewCell *)cell {
+- (void)configureCell:(UITableViewCell *)cell forTableView:(UITableView *)tableView {
+    self.tableView = tableView;
+    
     cell.textLabel.text = self.text;
     cell.detailTextLabel.text = nil;
     cell.accessoryView = nil;

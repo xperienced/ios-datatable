@@ -49,8 +49,8 @@
     [self.dataSource setValue:[NSNumber numberWithFloat:self.value] forKey:self.propertyKey];
 }
 
-- (void)configureCell:(UITableViewCell *)cell {
-    [super configureCell:cell];
+- (void)configureCell:(UITableViewCell *)cell forTableView:(UITableView *)tableView {
+    [super configureCell:cell forTableView:tableView];
     
     // create and configure UISwitch
     UISlider *slider = [[UISlider alloc] initWithFrame:self.sliderFrame];
