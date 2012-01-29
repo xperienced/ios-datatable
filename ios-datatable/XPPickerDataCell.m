@@ -80,7 +80,6 @@
      // create picker view
     
     UIPickerView *picker = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 40, 0, 0)];
-    //picker.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
     
     picker.delegate = self;
     picker.dataSource = self;
@@ -99,14 +98,8 @@
     closeButton.tintColor = [UIColor blackColor];
     [closeButton addTarget:self action:@selector(pickerDone:) forControlEvents:UIControlEventValueChanged];
     [self.actionSheet addSubview:closeButton];
-    
-    
-    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(0,0,80,22)];
-    textField.font = [UIFont systemFontOfSize:17];
-    textField.textColor = cell.detailTextLabel.textColor;
-    
 
-    cell.detailTextLabel.text = self.text;
+    cell.detailTextLabel.text = self.format(self.value);
 }
 
 - (void)tableViewRowSelected:(UITableView *)tableView navigationController:(UINavigationController *)navigationController {
