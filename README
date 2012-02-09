@@ -1,0 +1,25 @@
+Easier iOS table views with ios-datable. Project aims to simplify repetitive tasks related with creating a data bound UITableView, especially when it comes to different cell types (like sliders, switches, pickers, navigation, etc.)
+
+More info: http://xperienced.com.pl/blog/easier-ios-tableviews-with-ios-datatable
+
+Core classes:
+
+* Base classes
+** XPDataCell.h - base class for all datatable cells, used to configure UITableViewCell depending on data cell type
+** XPDataGroup.h - represents a group of cells (section in UITableView)
+** XPDataTableViewController.h - base controller for ios-datatable views
+
+* Data cell types
+** XPSwitchDataCell.h - represents a cell with UISwitch inside
+** XPSliderDataCell.h - represents a cell with UISlider inside
+** XPCheckmarkDataCell.h - represents a cell that can be checked, only one XPCheckmarkDataCell can be checked inside a XPDataGroup
+** XPPickerDataCell.h - represents a cell that when clicked displays the UIPicker and allows the value of a cell to be selected only from a list of defined values
+** XPDisclosureDataCell.h - similar to XPPickerDataCell but the value of a cell is picked from a list of values displayed in a separate view
+
+Sample usage:
+
+See https://github.com/xperienced/ios-dataview for a sample project that uses ios-datatable library.
+
+Questions?
+
+http://xperienced.com.pl/blog/contact
