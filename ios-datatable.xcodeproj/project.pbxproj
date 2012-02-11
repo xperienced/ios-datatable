@@ -45,6 +45,7 @@
 		1A90CAE514A2954000F91E1C /* XPDataGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPDataGroup.m; sourceTree = "<group>"; };
 		1A90CAE814A296CD00F91E1C /* XPDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDataTableViewController.h; sourceTree = "<group>"; };
 		1A90CAE914A296CD00F91E1C /* XPDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDataTableViewController.m; sourceTree = "<group>"; };
+		1A9B054D14E6C316008F519D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1AAD425A14E461AB00ED90D3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		1ABB058014D57ACB0084DDEB /* XPDisclosureDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDisclosureDataCell.h; sourceTree = "<group>"; };
 		1ABB058114D57ACB0084DDEB /* XPDisclosureDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDisclosureDataCell.m; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		1A90CAB614A28AD600F91E1C = {
 			isa = PBXGroup;
 			children = (
+				1A9B054D14E6C316008F519D /* LICENSE */,
 				1AAD425A14E461AB00ED90D3 /* README */,
 				1A90CAC614A28AD600F91E1C /* ios-datatable */,
 				1A90CAC314A28AD600F91E1C /* Frameworks */,
