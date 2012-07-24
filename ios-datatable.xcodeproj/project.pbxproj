@@ -25,6 +25,7 @@
 		1ABB058314D57ACB0084DDEB /* XPDisclosureDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB058114D57ACB0084DDEB /* XPDisclosureDataCell.m */; };
 		1ABBE57A14A3E3FA00B856A8 /* XPSwitchDataCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ABBE57814A3E3FA00B856A8 /* XPSwitchDataCell.h */; };
 		1ABBE57B14A3E3FA00B856A8 /* XPSwitchDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBE57914A3E3FA00B856A8 /* XPSwitchDataCell.m */; };
+		1AD1522615BEBC3900D392C3 /* XPDataTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD1522515BEBC3900D392C3 /* XPDataTable.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		1ABB058114D57ACB0084DDEB /* XPDisclosureDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDisclosureDataCell.m; sourceTree = "<group>"; };
 		1ABBE57814A3E3FA00B856A8 /* XPSwitchDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSwitchDataCell.h; sourceTree = "<group>"; };
 		1ABBE57914A3E3FA00B856A8 /* XPSwitchDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSwitchDataCell.m; sourceTree = "<group>"; };
+		1AD1522515BEBC3900D392C3 /* XPDataTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDataTable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				1ABB058114D57ACB0084DDEB /* XPDisclosureDataCell.m */,
 				1A31397214D591A500C20D00 /* XPListViewController.h */,
 				1A31397314D591A500C20D00 /* XPListViewController.m */,
+				1AD1522515BEBC3900D392C3 /* XPDataTable.h */,
 			);
 			path = "ios-datatable";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				1A13007814C1DFB700A77F85 /* XPPickerDataCell.h in Headers */,
 				1ABB058214D57ACB0084DDEB /* XPDisclosureDataCell.h in Headers */,
 				1A31397514D591A500C20D00 /* XPListViewController.h in Headers */,
+				1AD1522615BEBC3900D392C3 /* XPDataTable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
