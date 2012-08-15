@@ -26,7 +26,7 @@
 
 @protocol XPDataCellConfigurationDelegate <NSObject>
 
-- (void)dataCell:(XPDataCell *)cell configureTableViewCell:(UITableViewCell *)cell forTableView:(UITableView *)tableView;
+- (void)dataCell:(XPDataCell *)dataCell configureTableViewCell:(UITableViewCell *)tableViewCell forTableView:(UITableView *)tableView;
 
 @end
 
