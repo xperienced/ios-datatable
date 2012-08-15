@@ -22,19 +22,25 @@
  * THE SOFTWARE.
  *
  */
-
-#ifndef ios_datatable_XPDataTable_h
-#define ios_datatable_XPDataTable_h
-
-#import "XPDataGroup.h"
 #import "XPDataCell.h"
-#import "XPSwitchDataCell.h"
-#import "XPSliderDataCell.h"
-#import "XPCheckmarkDataCell.h"
-#import "XPPickerDataCell.h"
-#import "XPDisclosureDataCell.h"
 
-#import "XPDataTableViewController.h"
-#import "XPListViewController.h"
+@protocol XPDataCellConfigurationDelegate <NSObject>
 
-#endif
+- (void)dataCell:(XPDataCell *)cell configureTableViewCell:(UITableViewCell *)cell forTableView:(UITableView *)tableView;
+
+@end
+
+@interface XPDataCellConfiguration : NSObject {
+    NSMutableDictionary *_delegates;
+}
+
+- (id<XPDataCellConfigurationDelegate>)delegateForClass:(Class)aClass;
+- (void)setDelegate:(id<XPDataCellConfigurationDelegate>)delegate forClass:(Class)aClass;
+
+@end
+
+@interface XPDataCell (Configuration)
+
++ (XPDataCellConfiguration *)configuration;
+
+@end

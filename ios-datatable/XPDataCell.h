@@ -27,6 +27,7 @@
 #import <UIKit/UIKit.h>
 
 @class XPDataGroup;
+@protocol XPDataCellConfigurationDelegate;
 
 @interface XPDataCell : NSObject
 
@@ -44,3 +45,4 @@
 - (void)tableViewRowSelected:(UITableView *)tableView navigationController:(UINavigationController *)navigationController;
 
 @end
+

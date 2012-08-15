@@ -23,18 +23,29 @@
  *
  */
 
-#ifndef ios_datatable_XPDataTable_h
-#define ios_datatable_XPDataTable_h
+#import "XPDataCell+Configuration.h"
 
-#import "XPDataGroup.h"
-#import "XPDataCell.h"
-#import "XPSwitchDataCell.h"
-#import "XPSliderDataCell.h"
-#import "XPCheckmarkDataCell.h"
-#import "XPPickerDataCell.h"
-#import "XPDisclosureDataCell.h"
+@implementation XPDataCellConfiguration
 
-#import "XPDataTableViewController.h"
-#import "XPListViewController.h"
+- (id)init {
+    if ((self = [super init])) {
+        _delegates = [[NSMutableDictionary alloc] init];
+    }
+    
+    return self;
+}
 
-#endif
+- (id<XPDataCellConfigurationDelegate>)delegateForClass:(Class)aClass {
+    NSString *key = NSStringFromClass(aClass);
+    
+    return [_delegates objectForKey:key];
+}
+
+- (void)setDelegate:(id<XPDataCellConfigurationDelegate>)delegate forClass:(Class)aClass {
+    NSString *key = NSStringFromClass(aClass);
+    
+    [_delegates setObject:delegate forKey:key];
+}
+
+@end
+

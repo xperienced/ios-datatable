@@ -24,6 +24,7 @@
  */
 
 #import "XPDataCell.h"
+#import "XPDataCell+Configuration.h"
 
 @implementation XPDataCell
 
@@ -56,6 +57,9 @@
     cell.textLabel.text = self.text;
     cell.detailTextLabel.text = nil;
     cell.accessoryView = nil;
+    
+    XPDataCellConfiguration *configuration = [XPDataCell configuration];
+    [[configuration delegateForClass:[self class]] dataCell:self configureTableViewCell:cell forTableView:tableView];
 }
 
 - (void)tableViewRowSelected:(UITableView *)tableView navigationController:(UINavigationController *)navigationController {
@@ -64,6 +68,18 @@
 
 - (BOOL)allowNavigation {
     return NO;
+}
+
+#pragma mark - XPDataCell Configuration
+
++ (XPDataCellConfiguration *)configuration {
+    static dispatch_once_t onceToken;
+    static XPDataCellConfiguration *_configuration;
+    dispatch_once(&onceToken, ^{
+        _configuration = [[XPDataCellConfiguration alloc] init];
+    });
+    
+    return _configuration;
 }
 
 @end
