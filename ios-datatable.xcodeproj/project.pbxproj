@@ -28,6 +28,8 @@
 		1AD1522615BEBC3900D392C3 /* XPDataTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD1522515BEBC3900D392C3 /* XPDataTable.h */; };
 		1AE5B2E715DC33FE00BFC15B /* XPDataCell+Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE5B2E515DC33FE00BFC15B /* XPDataCell+Configuration.h */; };
 		1AE5B2E815DC33FE00BFC15B /* XPDataCell+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE5B2E615DC33FE00BFC15B /* XPDataCell+Configuration.m */; };
+		1AE5B39315DC4B2100BFC15B /* XPTextFieldDataCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE5B39115DC4B2100BFC15B /* XPTextFieldDataCell.h */; };
+		1AE5B39415DC4B2100BFC15B /* XPTextFieldDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE5B39215DC4B2100BFC15B /* XPTextFieldDataCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		1AD1522515BEBC3900D392C3 /* XPDataTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDataTable.h; sourceTree = "<group>"; };
 		1AE5B2E515DC33FE00BFC15B /* XPDataCell+Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XPDataCell+Configuration.h"; sourceTree = "<group>"; };
 		1AE5B2E615DC33FE00BFC15B /* XPDataCell+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XPDataCell+Configuration.m"; sourceTree = "<group>"; };
+		1AE5B39115DC4B2100BFC15B /* XPTextFieldDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPTextFieldDataCell.h; sourceTree = "<group>"; };
+		1AE5B39215DC4B2100BFC15B /* XPTextFieldDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPTextFieldDataCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 				1ABB058114D57ACB0084DDEB /* XPDisclosureDataCell.m */,
 				1A31397214D591A500C20D00 /* XPListViewController.h */,
 				1A31397314D591A500C20D00 /* XPListViewController.m */,
+				1AE5B39115DC4B2100BFC15B /* XPTextFieldDataCell.h */,
+				1AE5B39215DC4B2100BFC15B /* XPTextFieldDataCell.m */,
 				1AD1522515BEBC3900D392C3 /* XPDataTable.h */,
 				1AE5B2E515DC33FE00BFC15B /* XPDataCell+Configuration.h */,
 				1AE5B2E615DC33FE00BFC15B /* XPDataCell+Configuration.m */,
@@ -152,6 +158,7 @@
 				1A31397514D591A500C20D00 /* XPListViewController.h in Headers */,
 				1AD1522615BEBC3900D392C3 /* XPDataTable.h in Headers */,
 				1AE5B2E715DC33FE00BFC15B /* XPDataCell+Configuration.h in Headers */,
+				1AE5B39315DC4B2100BFC15B /* XPTextFieldDataCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +223,7 @@
 				1ABB058314D57ACB0084DDEB /* XPDisclosureDataCell.m in Sources */,
 				1A31397614D591A500C20D00 /* XPListViewController.m in Sources */,
 				1AE5B2E815DC33FE00BFC15B /* XPDataCell+Configuration.m in Sources */,
+				1AE5B39415DC4B2100BFC15B /* XPTextFieldDataCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

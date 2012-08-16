@@ -23,19 +23,18 @@
  *
  */
 
-#ifndef ios_datatable_XPDataTable_h
-#define ios_datatable_XPDataTable_h
-
-#import "XPDataGroup.h"
 #import "XPDataCell.h"
-#import "XPSwitchDataCell.h"
-#import "XPSliderDataCell.h"
-#import "XPCheckmarkDataCell.h"
-#import "XPPickerDataCell.h"
-#import "XPDisclosureDataCell.h"
-#import "XPTextFieldDataCell.h"
 
-#import "XPDataTableViewController.h"
-#import "XPListViewController.h"
+@interface XPTextFieldDataCell : XPDataCell<UITextFieldDelegate>
 
-#endif
+@property (nonatomic, readonly) UITextField *textField;
+@property (nonatomic) CGRect textFieldFrame;
+@property (nonatomic, strong) NSString *value;
+@property (nonatomic, strong) NSString *placeholder;
+@property (nonatomic) UIKeyboardType keyboardType;
+
+- (id)initWithText:(NSString *)text value:(NSString *)value;
+- (id)initWithText:(NSString *)text value:(NSString *)value textFieldFrame:(CGRect)frame;
+- (id)initWithText:(NSString *)text dataSource:(NSObject *)dataSource propertyKey:(NSString *)propertyKey textFieldFrame:(CGRect)frame;
+
+@end
