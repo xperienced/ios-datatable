@@ -69,7 +69,7 @@ static inline CGRect defaultTextFieldRect() {
 
 - (id)initWithText:(NSString *)text dataSource:(NSObject *)dataSource propertyKey:(NSString *)propertyKey textFieldFrame:(CGRect)frame {
     if ((self = [super initWithText:text dataSource:dataSource propertyKey:propertyKey])) {
-        self.value = [[dataSource valueForKey:propertyKey] stringValue];
+        self.value = [dataSource valueForKey:propertyKey];
         self.textFieldFrame = frame;
     }
     
